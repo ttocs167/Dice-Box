@@ -1,0 +1,34 @@
+{
+    "name": "Contols",
+    "maps": [
+        {
+            "name": "Default",
+            "id": "8bc99dbd-ad82-43b8-ba63-14b4609073ab",
+            "actions": [
+                {
+                    "name": "RollDice",
+                    "type": "Button",
+                    "id": "021c0ee9-7ab8-43bb-9952-155f6c11130e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "0ad1a7bc-1945-4e95-ae36-6c789a35695a",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RollDice",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
