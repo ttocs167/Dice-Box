@@ -5,7 +5,6 @@ using UnityEngine;
 public class Die : MonoBehaviour
 {
     public LayerMask diceFaceLayer;
-    
     private Rigidbody _rb;
     
     private bool _hasComeToRest = false;

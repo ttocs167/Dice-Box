@@ -1,0 +1,16 @@
+dice roller all at one thingy
+
+create a list of indices length of spawn points
+shuffle the list
+
+consume them one by one for each dice in the queue
+
+when out of spaces, break.
+roll the staged dice
+
+wait for seconds
+
+consume from the queue again
+
+repeat
+

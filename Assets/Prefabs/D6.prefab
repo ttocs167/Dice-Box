@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7692378585285552185}
   - component: {fileID: 5744159662556773977}
   m_Layer: 6
-  m_Name: Face (5)
+  m_Name: Face 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -182,7 +182,7 @@ GameObject:
   - component: {fileID: 4396259300665179793}
   - component: {fileID: 7889021209684229188}
   m_Layer: 6
-  m_Name: Face (2)
+  m_Name: Face 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -384,7 +384,7 @@ GameObject:
   - component: {fileID: 1575396174173305350}
   - component: {fileID: 8351324782384518400}
   m_Layer: 6
-  m_Name: Face
+  m_Name: Face 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -924,7 +924,7 @@ GameObject:
   - component: {fileID: 7064068556825582833}
   - component: {fileID: 8842270230998764548}
   m_Layer: 6
-  m_Name: Face (3)
+  m_Name: Face 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1129,7 +1129,7 @@ GameObject:
   - component: {fileID: 5539359162801479408}
   - component: {fileID: 4918166368702090975}
   m_Layer: 0
-  m_Name: Dice
+  m_Name: D6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1383,7 +1383,7 @@ GameObject:
   - component: {fileID: 5783855445151318003}
   - component: {fileID: 8628958463804743090}
   m_Layer: 6
-  m_Name: Face (1)
+  m_Name: Face 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1451,7 +1451,7 @@ GameObject:
   - component: {fileID: 3921731580765926610}
   - component: {fileID: 615825132688303867}
   m_Layer: 6
-  m_Name: Face (4)
+  m_Name: Face 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
