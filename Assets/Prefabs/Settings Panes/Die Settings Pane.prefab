@@ -277,7 +277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 1
-  dicePrefab: {fileID: 7102530724308607452, guid: f2bfa202b7eb201489700fd8e5d6b57c,
+  dicePrefab: {fileID: 6444241034851052532, guid: 42191a7c2eac4b6499404d6da285438a,
     type: 3}
   increaseButton: {fileID: 3613368027027271501}
   decreaseButton: {fileID: 7930736623461954272}

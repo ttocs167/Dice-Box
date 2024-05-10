@@ -1,12 +1,22 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
+using Random = UnityEngine.Random;
+
+[System.Serializable]
+public struct DiceFace
+{
+    public Vector3 FaceNormal;
+    public int FaceValue;
+}
 
 public class Die : MonoBehaviour
 {
-    public LayerMask diceFaceLayer;
-    private Rigidbody _rb;
+    public DiceFace[] faces;
     
+    private Rigidbody _rb;
     private bool _hasComeToRest = false;
     private MeshRenderer _meshRenderer;
     
@@ -40,16 +50,24 @@ public class Die : MonoBehaviour
         InvokeRepeating(nameof(CheckRoll), 0.5f, 0.5f);
     }
     
+    /// <summary>
+    /// check the array of faces to find the normal vector which most closely aligns with Vector3.up
+    /// </summary>
+    /// <returns>The value of the face most aligned with Vector3.up</returns>
     private int? Evaluate()
     {
-        // cast a ray down onto the centre of the dice from a position in world space 2m above the die
-        RaycastHit hit;
-        if (Physics.Raycast(transform.position + Vector3.up * 2, Vector3.down, out hit, 3, diceFaceLayer,
-                QueryTriggerInteraction.Collide))
+        var closestAngle = 180f;
+        var bestFace = new DiceFace();
+        foreach (DiceFace face in faces)
         {
-            return hit.collider.GetComponent<DiceFace>().faceValue;
+            var localFaceNormal = transform.TransformDirection(face.FaceNormal);
+            var angle = Vector3.Angle(localFaceNormal, Vector3.up);
+            
+            if (!(angle < closestAngle)) continue;
+            closestAngle = angle;
+            bestFace = face;
         }
-        else return null;
+        return bestFace.FaceValue;
     }
 
     private bool IsResting()

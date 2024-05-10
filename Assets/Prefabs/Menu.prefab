@@ -4673,7 +4673,7 @@ PrefabInstance:
     - target: {fileID: 5903149104428234445, guid: bdc977577ad985041bcdb84bb4ad91b8,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -350
+      value: -150
       objectReference: {fileID: 0}
     - target: {fileID: 5903149104428234445, guid: bdc977577ad985041bcdb84bb4ad91b8,
         type: 3}
@@ -4710,12 +4710,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -50
       objectReference: {fileID: 0}
-    - target: {fileID: 7193870252326842805, guid: bdc977577ad985041bcdb84bb4ad91b8,
-        type: 3}
-      propertyPath: dicePrefab
-      value: 
-      objectReference: {fileID: 595058132521474681, guid: 1699e1f9b9b279546b7f32fe78f52788,
-        type: 3}
     - target: {fileID: 7421195493207125887, guid: bdc977577ad985041bcdb84bb4ad91b8,
         type: 3}
       propertyPath: m_AnchorMax.y

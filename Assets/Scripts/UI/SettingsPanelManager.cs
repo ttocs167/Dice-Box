@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine.UI;
 
 namespace UI
@@ -42,6 +43,7 @@ namespace UI
             }
 
             // Roll the dice
+            diceQueue = RandomUtils.Shuffle(diceQueue);
             DiceRoller.Instance.AddToQueueAndRoll(diceQueue);
         }
 

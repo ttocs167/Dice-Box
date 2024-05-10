@@ -64,11 +64,12 @@ public class DiceRoller : MonoBehaviour
         var maxIdx = Math.Min(possibleSpawnPoints.Length, _diceQueue.Count);
         
         // get a random list of integers to determine the order in which the spawners will be used
-        var randomList = RandomUtils.GenerateRandomizedIntegerList(maxIdx);
+        var randomList = RandomUtils.GenerateRandomizedIntegerList(possibleSpawnPoints.Length);
         
         // spawn the dice in the order determined by the random list
-        foreach (var idx in randomList)
+        for (int i = 0; i < maxIdx; i++)
         {
+            var idx = randomList[i];
             var spawner = possibleSpawnPoints[idx];
             var dicePrefab = _diceQueue.Dequeue().DicePrefab;
             
